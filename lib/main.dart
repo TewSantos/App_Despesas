@@ -5,7 +5,6 @@ import 'components/transaction_form.dart';
 import 'components/transaction_list.dart';
 import 'components/chart.dart';
 import 'models/transaction.dart';
-
 main() => runApp(ExpensesApp());
 
 
@@ -67,6 +66,18 @@ final List<Transaction>_transactions = [
       id: 't2', 
       title: 'Conta De Luz', 
       value: 211.30, 
+      date: DateTime.now().subtract(Duration(days: 4)),
+      ),
+      Transaction(
+      id: 't3', 
+      title: 'Cartão de Crédito', 
+      value: 100211.30, 
+      date: DateTime.now().subtract(Duration(days: 4)),
+      ),
+      Transaction(
+      id: 't4', 
+      title: 'Lanche', 
+      value: 11.30, 
       date: DateTime.now().subtract(Duration(days: 4)),
       ),
   ];
