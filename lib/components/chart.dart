@@ -32,7 +32,7 @@ class Chart extends StatelessWidget {
         'value': 9.99
         };
 
-    });
+    }).reversed.toList();
   }
 
   double get _weekTotalValue{

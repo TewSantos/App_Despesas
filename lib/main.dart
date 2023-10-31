@@ -22,11 +22,15 @@ class ExpensesApp extends StatelessWidget {
           secondary: Colors.amber,
         ),
         textTheme: tema.textTheme.copyWith(
-          headline6: TextStyle(
+          titleLarge: TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 18,
             fontWeight: FontWeight.bold,
             color: Colors.black,
+          ),
+          button: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
           ),
         ),
         appBarTheme: AppBarTheme(
@@ -72,13 +76,13 @@ final List<Transaction>_transactions = [
       id: 't3', 
       title: 'Cartão de Crédito', 
       value: 100211.30, 
-      date: DateTime.now().subtract(Duration(days: 4)),
+      date: DateTime.now(),
       ),
       Transaction(
       id: 't4', 
       title: 'Lanche', 
       value: 11.30, 
-      date: DateTime.now().subtract(Duration(days: 4)),
+      date: DateTime.now(),
       ),
   ];
 
